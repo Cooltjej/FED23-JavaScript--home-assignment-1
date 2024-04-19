@@ -1,0 +1,422 @@
+html {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: rgb(248, 149, 0);
+    padding: 3%;
+    color: white;
+}
+
+h1,
+h2 {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    font-size: 25px;
+}
+
+h2 {
+    margin-top: 5%;
+    font-style: italic;
+}
+
+p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+#quiz_box {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(248, 149, 0);
+    position: relative;
+    flex-direction: column;
+    display: none;
+}
+
+#score_text {
+    position: absolute;
+    right: 14%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+#score_counter {
+    position: absolute;
+    right: 4%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+#student_image_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+    margin-top: 9%;
+    border: none;
+}
+
+#alternative_buttons_1_2,
+#alternative_buttons_2_3 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+#option_button_1,
+#option_button_2,
+#option_button_3,
+#option_button_4 {
+    width: 40vw;
+    height: 5vh;
+    font-size: 30px;
+    border-radius: 12px;
+}
+
+#option_button_1 {
+    background-color: rgb(182, 25, 255);
+    color: antiquewhite;
+}
+
+#option_button_2 {
+    background-color: rgb(255, 24, 197);
+    color: antiquewhite;
+}
+
+#option_button_3 {
+    background-color: rgb(255, 173, 21);
+    color: antiquewhite;
+}
+
+#option_button_4 {
+    background-color: rgb(20, 255, 157);
+    color: rgb(15, 15, 15);
+}
+
+#option_button_4:focus {
+    text-decoration: underline rgb(20, 20, 20);
+    color: black;
+}
+
+.all_option_buttons:focus {
+    border-width: 2px;
+    border-color: #000000;
+    font-weight: bolder;
+    font-size: medium;
+    border-radius: 12px;
+    text-decoration: underline rgb(252, 252, 252);
+}
+
+.all_option_buttons:hover {
+    border-width: 4px;
+    border-color: #000000;
+    font-weight: bolder;
+    font-size: medium;
+    border-radius: 12px;
+}
+
+#answer_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#answer_button {
+    width: 37vw;
+    height: 4vh;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 30px;
+    background-color: white;
+    border-width: 2px;
+    border-radius: 12px;
+}
+
+#answer_button:hover {
+    background-color: rgb(0, 157, 248);
+    border-radius: 12px;
+    border-width: 4px;
+    color: white;
+}
+
+#start_game_button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 40vw;
+    height: 4vh;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+}
+
+#start_game_button:hover {
+    background-color: rgba(0, 240, 60, 0.842);
+    border-radius: 12px;
+    font-weight: bold;
+    border-width: 4px;
+    font-size: 15px;
+}
+
+#div_start_game {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+#display_wrapper {
+    background-color: rgb(248, 149, 0);
+    display: none;
+    padding: 1vh;
+}
+
+#input_div,
+#user_input_div {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ok_button_user_input {
+    margin-top: 7%;
+    width: 40vw;
+    height: 3vh;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+#ok_button_user_input:hover {
+    margin-top: 7%;
+    background-color: rgb(201, 81, 34);
+    font-weight: bold;
+    border-width: 4px;
+    color: white;
+}
+
+#user_input {
+    margin-top: 2rem;
+    font-size: 14px;
+    width: 60vw;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 3vh;
+}
+
+label {
+    font-size: 18px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+img {
+    border-radius: 12px;
+    width: 60vw;
+}
+
+#reset_button {
+    width: 30vw;
+    height: 5vh;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    color: red;
+}
+
+footer {
+    font-size: 13px;
+    margin-top: 10%;
+}
+
+
+@media (min-width: 650px) { /*-----------------------------------------------------------------------------------*/
+
+    main {
+        background-color: rgb(0, 0, 0);
+        padding: 3%;
+        color: white;
+    }
+
+    #option_button_1 {
+        background-color: #f90069;
+        color: antiquewhite;
+    }
+
+    #option_button_2 {
+        background-color: #ffaf00;
+        color: antiquewhite;
+    }
+
+    #option_button_3 {
+        background-color: #ad09f0;
+        color: antiquewhite;
+    }
+
+    #option_button_4 {
+        background-color: #d5f900;
+        color: rgb(15, 15, 15);
+    }
+
+    #option_button_4:focus {
+        text-decoration: underline rgb(20, 20, 20);
+        color: black;
+    }
+
+    .all_option_buttons:focus {
+        border-width: 5px;
+        border-color: #000000;
+        font-weight: bolder;
+        font-size: medium;
+        border-radius: 12px;
+        text-decoration: underline rgb(252, 252, 252);
+    }
+
+    .all_option_buttons:hover {
+        border-width: 8px;
+        border-color: #000000;
+        font-weight: bolder;
+        font-size: medium;
+        border-radius: 12px;
+    }
+
+    #start_game_button {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 40vw;
+        height: 4vh;
+        font-size: 20px;
+        border-radius: 12px;
+        background-color: rgb(255, 255, 255);
+        border-width: 2px;
+    }
+    
+    #start_game_button:hover {
+        background-color: rgba(0, 240, 60, 0.842);
+        border-radius: 12px;
+        font-weight: bold;
+        border-width: 4px;
+        font-size: 15px;
+    }
+
+    #display_wrapper {
+        background-color: #000000;
+        display: none;
+        padding: 1vh;
+    }
+
+    #quiz_box {
+        display: flex;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(248, 149, 0);
+        position: relative;
+        flex-direction: column;
+        display: none;
+    }
+
+    #ok_button_user_input:hover {
+        background-color: #daff00;
+        border-width: 5px;
+        color: rgb(0, 0, 0);
+        border-color: #daff00;
+    }
+
+    #reset_button {
+        width: 30vw;
+        height: 5vh;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        text-align: left;
+        color: red;
+    }
+}
+
+@media (min-width: 951px) { /*-----------------------------------------------------------------------------------*/
+
+    main {
+        background-color: #85CBCC;
+        padding: 3%;
+        color: white;
+    }
+   
+    #option_button_1 {
+        background-color: #A8DEE0;
+        color: rgb(15, 15, 15);
+    }
+
+    #option_button_2 {
+        background-color: #F9E2AE;
+        color: rgb(15, 15, 15);
+    }
+
+    #option_button_3 {
+        background-color: #FBC78D;
+        color: rgb(15, 15, 15);
+    }
+
+    #option_button_4 {
+        background-color: #A7D67D;
+        color: rgb(15, 15, 15);
+    }
+
+    #main {
+        background-color: #85CBCC;
+        padding: 3%;
+        color: white;
+    }
+
+    #display_wrapper {
+        background-color: #85CBCC;
+        display: none;
+        padding: 1vh;
+    }
+
+    #quiz_box {
+        display: flex;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #85CBCC;
+        position: relative;
+        flex-direction: column;
+        display: none;
+    }
+
+    #ok_button_user_input:hover {
+        background-color: #A7D67D;
+        color: rgb(0, 0, 0);
+    }
+
+    #answer_button:focus {
+        background-color: #85CBCC;
+        color: rgb(0, 0, 0);
+    }
+
+    #answer_button:hover {
+        background-color: #85CBCC;
+        color: rgb(0, 0, 0);
+    }
+
+    .all_option_buttons:focus {
+        border-color: #000000;
+        text-decoration: underline rgb(0, 0, 0);
+    }
+
+}

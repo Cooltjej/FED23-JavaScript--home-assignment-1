@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiztime baby!</title>
+    <link href="style.css" rel="stylesheet">
+	<script src="students.js"></script>
+  </head>
+  <body>
+
+
+<main>
+    <h1>Quiz time</h1>
+	
+	<p>
+		Dags att spela spel! Välj hur många klasskamrater du vill gissa på och tryck på OK. 
+		<br>
+		OBS du får bara välja hur många klasskamrater du vill gissa på En gång.
+		<br>
+		Mycket nöje & lycka till!
+	</p>
+</main>
+
+<article>
+    <h2>Är du redo?</h2>
+	<div id="div_start_game">	
+		<button id="start_game_button">Starta spelet!</button> 	
+	</div>
+	<div id="display_wrapper">
+	<div id="input_div">
+		<label for="user_input">Då kör vi! Välj hur många klasskamrater du vill gissa på. Minst 4, max 41!</label>
+		<br>
+		<div id="user_input_div">
+			<input type="number" id="user_input" placeholder="Skriv in ett tal mellan 4-41, tack!">
+			<button id="ok_button_user_input">OK</button>
+		</div>
+	</div>
+	</div>	
+    	<section>
+        	<div id="quiz_box">
+			<div id="score_div">
+				<span id="score_text">Score:</span>  							
+				<span id="score_counter"></span>	
+			</div>
+			<div id="student_image_div"> 
+				<img id="student_image" alt="picture of a student" src="assets/images/">
+			</div> 
+				<div id="alternative_buttons_1_2">	
+					<button id="option_button_1" class="all_option_buttons">alt-1</button> 
+					<button id="option_button_2" class="all_option_buttons">alt-2</button> 
+				</div>
+					<div id="alternative_buttons_2_3">
+						<button id="option_button_3" class="all_option_buttons">alt-3</button> 
+						<button id="option_button_4" class="all_option_buttons">alt-4</button> 
+					</div>
+					<div id="answer_div">
+						<button type="button" id="answer_button">Svara</button>
+					</div> 							
+			</div>														
+    	</section>
+		<button type="button" id="reset_button" onclick="resetGame()">För många fel? Reset!</button>
+	</article>
+<footer>
+	Emma Å.K, Medieinstitutet FED23, 2023 &copy;
+</footer>
+<script src="script.js"></script>
+  </body>
+</html>
